@@ -9,7 +9,9 @@ body {
 }
 
 header, footer {
-  background-color: #0077b6;
+  background: #16222a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #16222a, #3a6073); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #16222a, #3a6073); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: left;
 }
 
@@ -22,10 +24,9 @@ header {
 
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr) ) ;
+  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
   grid-gap: 20px;
-  margin-top: 44px;
-
+  margin: 44px 40px;
   justify-items: center;
   justify-content: center;
   align-items: stretch;
@@ -46,8 +47,8 @@ h2 {
   font-weight: 600;
   letter-spacing: 0.3px;
   text-align: left;
-  color: #0077b6;
-  padding: 10px 0px 10px 10px;
+  color: #3a6073;
+  padding: 10px 20px 0 20px;
 }
 
 img {
@@ -87,8 +88,8 @@ font-family: 'Lato', sans-serif';
 }
 
 .myButton:hover {
-    background-color:#caf0f8;
-    color: #425256;
+    background-color: #6bafd0;
+    color: #252626;
 }
 
 .myButton:active {
@@ -131,6 +132,13 @@ footer div {
 @media all and (max-width:700px) {
   main {
     grid-template-columns: 1fr;
+    margin: 44px auto;
+  }
+  .description {
+    font-size: 18px;
+  }
+  img {
+    height: 25vh;
   }
 }
 
