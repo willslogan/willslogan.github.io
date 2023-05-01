@@ -46,7 +46,7 @@ h2 {
   font-weight: 600;
   letter-spacing: 0.3px;
   text-align: left;
-  color: #ffa500;
+  color: #0077b6;
   padding: 10px 0px 10px 10px;
 }
 
@@ -88,6 +88,7 @@ font-family: 'Lato', sans-serif';
 
 .myButton:hover {
     background-color:#caf0f8;
+    color: #425256;
 }
 
 .myButton:active {
