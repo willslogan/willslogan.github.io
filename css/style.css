@@ -43,7 +43,7 @@ h1 {
 
 h2 {
   font-family: 'Playfair Display', sans-serif;
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 600;
   letter-spacing: 0.3px;
   text-align: left;
@@ -104,7 +104,7 @@ font-family: 'Lato', sans-serif';
 
 .description {
   font-family: 'Lato', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.29;
   letter-spacing: 0.1px;
@@ -127,9 +127,30 @@ footer div {
   align-content: center;
   justify-content: space-between;
   padding: 10px 20px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255, 0.5);
 }
 
+.copyright {
+  margin: auto 0;
+}
+
+.icons {
+  list-style-type: none;
+  display: inline-flex;
+}
+
+.icons a {
+  margin: 0 8px;
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.icons a:hover {
+  color: rgb(255, 255, 255, 0.8);
+}
+
+a{
+  color:#3a6073
+}
 @media all and (max-width:700px) {
   main {
     grid-template-columns: 1fr;
